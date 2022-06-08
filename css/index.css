@@ -1,0 +1,308 @@
+.landingpage {
+    height: 800px;
+    width: 100%;
+    position: relative;
+    margin-top: 75px;
+}
+
+.bg-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80%;
+}
+
+.herobanner {
+    position: relative;
+    background-image: url(../img/ian-dooley-DJ7bWa-Gwks-unsplash.jpg);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -380px 0;
+    z-index: 1;
+}
+
+.herobanner::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(90.48deg, #0B1629 0.45%, rgba(0, 0, 0, 0) 28.82%), linear-gradient(0deg, rgba(11, 22, 41, 0.8), rgba(11, 22, 41, 0.8)), linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 31.77%, rgba(0, 0, 0, 0) 66.15%, #0B1629 100%);}
+
+.banner-content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.banner-content {
+    z-index: 10;
+    top: 400px;
+    position: absolute;
+    max-width: 700px;
+    padding: 10px;
+}
+
+.banner-content h2 {
+    color: var(--primary-white);
+    font-weight: 200;
+    font-size: 1.3em;
+}
+
+.banner-content p {
+    color: var(--primary-white);
+    max-width: 450px;
+    font-weight: 200;
+}
+
+.banner-content h1 {
+    color: var(--primary-green);
+    font-size: 2.6em;
+    font-weight: 400;
+}
+
+.about-container {
+    background-color: var(--primary-white);
+    height: 850px;
+    width: 100%;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+.about-img-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    z-index: 50;
+}
+
+.inner-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    top: -30px;
+    right: 5px;
+    margin-left: 60px;
+}
+
+.inner-img-container {
+    position: relative;
+    height: 100%;
+    width: 90%;
+    border: 4px solid var(--primary-green);
+    border-radius: 3px;
+}
+
+.inner-img-container::before {
+    border: 4px solid var(--primary-white);
+    border-radius: 2px;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: -30px;
+    right: -30px;
+    background-image: url(../img/IMG_0196.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.about-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+}
+
+.about-content-container h3 {
+    font-size: 2em;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    width: 90%;
+    gap: 30px;
+}
+
+.about-content p {
+    font-weight: 200;
+}
+
+.section-one-imgs {
+    height: 300px;
+    width: 100%;
+}
+
+.section-one-ipad {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img-inner {
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+}
+
+.section-one-ipad img {
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    width: 130%;
+    max-width: 650px;
+}
+
+.section-one-iphone {
+    display: none;
+}
+
+.section-one-content {
+    max-width: 300px;
+}
+
+.section-one-content h3 {
+    font-size: 1.5em;
+    color: var(--primary-white);
+    font-weight: 200;
+}
+
+.section-one-content h2 {
+    font-size: 4em;
+    font-weight: 400;
+    color: var(--primary-green);
+}
+
+.section-one-content p {
+    font-size: 1em;
+    font-weight: 100;
+    color: var(--primary-white);
+    max-width: 400px;
+}
+
+@media screen and (max-width: 410px) {
+    .inner-container {
+        height: 70%;
+    }
+
+}
+
+@media screen and (min-width: 500px){
+    .banner-content h1 {
+        font-size: 3.2em;
+    }
+
+    .banner-content h2 {
+        font-size: 1.3em;
+    }
+
+    .herobanner {
+        background-position: center;
+    }
+
+    .about-container {
+        height: 750px;
+    }
+
+    .img-inner {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 590px) {
+    .section-one-imgs img {
+        left: 30px;    
+}
+}
+
+@media screen and (min-width: 768px) {
+    .banner-content-wrapper {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .banner-content {
+        top: 370px;
+        max-width: 800px;
+    }
+
+    .landingpage {
+        margin-top: 80px;
+        height: 690px;
+    }
+
+    .bg-container {
+        width: 80%;
+        height: 100%;
+        right: 0;
+    }
+
+    .header {
+        filter: drop-shadow(0px -9px 63px rgba(0, 0, 0, 0.54)) drop-shadow(0px -2.71324px 18.9927px rgba(0, 0, 0, 0.351858)) drop-shadow(0px -1.12694px 7.88858px rgba(0, 0, 0, 0.27)) drop-shadow(0px -0.407592px 2.85314px rgba(0, 0, 0, 0.188142));
+    }
+
+    .herobanner::after {
+        background: linear-gradient(0deg, rgba(11, 22, 41, 0.8), rgba(11, 22, 41, 0.8)), linear-gradient(270.02deg, #0B1629 0.54%, rgba(0, 0, 0, 0) 14.6%, rgba(0, 0, 0, 0) 31.78%, #0B1629 98.43%), linear-gradient(180deg, #0B1629 -2.39%, rgba(0, 0, 0, 0) 25.03%, rgba(12, 25, 47, 0) 68.13%, #0B1629 100%);
+    }
+
+    .about-wrapper {
+        flex-direction: row-reverse;
+        gap: 40px;
+    }
+
+    .about-container {
+        height: 500px;
+    }
+
+    .about-content-container {
+        margin: 50px 0 0 10px;
+        width: 45%;
+    }
+
+    .about-content {
+        margin-bottom: 20px;
+        max-width: 550px;
+    }
+
+
+    .inner-container {
+        right: 30px;
+    }
+
+    .inner-img-container {
+        height: 80%;
+        margin-left: 20px;
+    }
+
+    .about-img-container {
+        height: 500px;
+        width: 45%;
+    }
+
+    .banner-content h1 {
+        font-size: 3.7em;
+    }
+
+    .banner-content p {
+        max-width: 500px;
+    }
+}
+
+
+

@@ -1,0 +1,124 @@
+footer {
+    margin-top: 200px;
+    box-shadow: 0px 42px 188px #000000, 0px 12.6618px 56.6765px rgba(0, 0, 0, 0.651589), 0px 5.25905px 23.5405px rgba(0, 0, 0, 0.5), 0px 1.9021px 8.51414px rgba(0, 0, 0, 0.348411);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 20px 10px;
+}
+
+.footer-logo {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--primary-white);
+    font-size: 1.6em;
+    font-weight: 200;
+}
+
+.footer-media-links-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer-media-links {
+    width: 33px;
+    height: 33px;
+}
+
+.footer-media-links svg, .footer-media-links path {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.creator-container {
+    padding: 30px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.creator-container p {
+    font-size: 0.6em;
+    color: var(--primary-white);
+    font-weight: 100;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        gap: none;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .footer-logo {
+        order: 2;
+    }
+
+    .footer-logo {
+        height: 70px;
+    }
+
+    .footer-links{
+        order: 1;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .footer-links a {
+        font-size: 0.8em;
+    }
+
+    .footer-media-links-container {
+        order: 3;
+        justify-content: flex-end;
+        gap: 20px;
+        width: 227px;
+    }
+
+    .footer-media-links {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-media-links svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-media-links:hover > svg path {
+        fill: rgb(227, 227, 227);    
+    }
+
+    .creator-container {
+        padding: 20px;
+    }
+}

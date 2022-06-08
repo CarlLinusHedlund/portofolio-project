@@ -2,7 +2,7 @@
     /* Primary colors */
     --primary-blue: #0B1629;
     --primary-white: #fff;
-    --primary-green: #92E3A9;
+    --primary-green: #8cfdac;
 
     /* Section shadow */
 
@@ -13,7 +13,6 @@
 }
 
 * {
-    background-color: var(--primary-blue);
     margin: 0;
     font-family: 'K2D', sans-serif;
     font-family: 'Oswald', sans-serif;
@@ -21,10 +20,15 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+body {
+    background-color: var(--primary-blue);
+}
+
 .inner {
     max-width: 1024px;
     margin: 0 auto;
     padding: 0px 10px;
+    position: relative;
 }
 
 .none {

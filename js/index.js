@@ -3,7 +3,8 @@ const faders = document.querySelectorAll(".fade-in")
 const sections = document.querySelectorAll(".section")
 const navLinks = document.querySelectorAll(".nav-links-desktop")
 const navBars = document.querySelectorAll(".bar")
-
+const sliderGuider = document.querySelector(".disappear")
+const projectSection = document.querySelectorAll(".project-section")
 
 //Helper Function
 const actionSectionHandler = (currentSectionID) => {
@@ -33,7 +34,7 @@ sectionWatcherCallback = (section, sectionWatcher) => {
         if(!section.isIntersecting){
             return
         }
-        // console.log(section);
+        console.log(section);
         actionSectionHandler(section.target.id);
     })
 }
@@ -44,7 +45,6 @@ const sectionWatcherOptions = {
 
 const sectionWatcher = new IntersectionObserver(sectionWatcherCallback, sectionWatcherOptions)
 
-
 sections.forEach(section => {
     sectionWatcher.observe(section)
 })
@@ -52,22 +52,44 @@ sections.forEach(section => {
 
 
 
-
-
-
-
 //Intersection Observer for fade-in of  slide nav and about me text
 const appearOptions = {
-    threshold: 0.3
+    threshold: .3,
 };
 
 const appearOnScroll = new IntersectionObserver (function(entries, appearOnScroll) {
     entries.forEach(entry => {
         entry.target.classList.toggle('appear');
-
     })
 }, appearOptions)
 
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
 })
+
+
+
+
+
+
+
+
+// const disappearOptions ={
+//     threshold: .5,
+// }
+
+// const disappearOnScroll = new IntersectionObserver(function(entries, disappearOnScroll){
+    
+
+//     entries.forEach(entry => {
+//         console.log(entry.target.id);
+//         if (entry.isIntersecting === snowydays || jobless){
+//             sliderGuider.classList.add ('active')
+//         }
+        
+//     })
+// }, disappearOptions)
+
+// projectSection.forEach(project => {
+//     disappearOnScroll.observe(project)
+// })

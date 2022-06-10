@@ -14,7 +14,8 @@
 }
 
 .contact-form-container{
-    width: 50%;
+    width: 100%;
+    height: 100%;
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -26,6 +27,7 @@
 .google-map-container {
     width: 50%;
     height: 100%;
+    display: none;
 }
 
 /* .gradient-overlay-top {
@@ -98,7 +100,7 @@
 }
 
 .contact-form-container form {
-    width: 70%;
+    width: 90%;
     height: 60%;
 }
 
@@ -207,8 +209,42 @@ small {
     bottom: -15px;
 }
 
+.submit {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border: 1px solid var(--primary-green);
+    border-radius: 5px;
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+}
+
 @media screen and (min-width: 768px){
     .contact-container {
         flex-direction: row;
+        /* align-items: center;  */
+        align-items: center;
+        height: 120vh;
+
     }
+
+    .google-map-container {
+        display: block;
+        height: 90vh;
+        max-height: 700px;
+    }
+
+    .contact-form-container {
+        width: 50%;
+        height: 80%;
+    }
+
+    .submit {
+        width: 80%;
+        height: 40px;
+    }
+
+    /* .contact-form {
+        height: 100vh;
+    } */
 }

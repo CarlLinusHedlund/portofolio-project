@@ -18,6 +18,7 @@
     <!-- JS links -->
     <script src="./js/index.js" defer></script>
     <script src="./js/header.js" defer></script>
+    <script src="./js/contact.js" defer></script>
     <script src="./js/google-map.js" defer></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEzQcAyROmESy5KkHQVMGjVLx3lz6w3JY&map_ids=c5fcf8b11e1c48d4&callback=initMap"></script>
 </head>
@@ -343,43 +344,48 @@
                         I'll try my best to get back to you!
                     </p>
                 </div>
-                <form action="" method="post" id="contact-form" class="form-container">
+                <form action="" method="" id="contact-form" class="form-container" novalidate>
                     <div class="row100">
                         <div class="col">
                             <div class="inputBox">
-                                <input type="text" name="name" required="required">
+                                <input type="text" name="name" id="name" required="required">
                                 <span class="text">Name</span>
                                 <span class="line"></span>
+                                <small></small>
                             </div>
                         </div>
                     </div>
                     <div class="row100">
                         <div class="col">
-                            <div class="inputBox">
-                                <input type="email" name="email" required="required">
+                            <div class="inputBox email-container">
+                                <input type="text" id="email" name="email" required="required">
                                 <span class="text">Email</span>
                                 <span class="line"></span>
+                                <small></small>
                             </div>
                         </div>
                     </div>
                     <div class="row100">
                         <div class="col">
                             <div class="inputBox">
-                                <input type="text" name="" required="required">
+                                <input type="text" name="" id="subject" required="required">
                                 <span class="text">Subject</span>
                                 <span class="line"></span>
+                                <small></small>
                             </div>
                         </div>
                     </div>
                     <div class="row100">
                         <div class="col">
-                            <div class="inputBox textarea">
-                                <textarea required="required"></textarea>
-                                <span class="text">Type Your Message...</span>
+                            <div class="inputBox textarea message-container">
+                                <textarea id="message" required="required"></textarea>
+                                <span class="text message-span">Type Your Message...</span>
                                 <span class="line"></span>
+                                <small></small>
                             </div>
                         </div>
                     </div>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
             <div class="google-map-container">
@@ -391,7 +397,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
     <footer>
         <div class="inner footer-container">

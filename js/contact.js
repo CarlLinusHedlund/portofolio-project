@@ -3,6 +3,10 @@ const email = document.querySelector("#email")
 const message = document.querySelector("#message")
 const subject = document.querySelector("#subject")
 const name = document.querySelector("#name")
+
+
+// carllinushedlund@snowydays.casa
+
 // const submit = document.querySelector(".submit")
 
 form.addEventListener('submit', (e) => {

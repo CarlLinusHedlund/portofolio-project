@@ -155,8 +155,9 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: 350px;
+    height: 50%;
     width: 80%;
+    max-height: 350px;
 }
 
 .skills-container h2 {
@@ -488,6 +489,7 @@ main {
         flex-direction: row-reverse;
         gap: 40px;
         width: 95%;
+        height: 50%;
     }
 
     .about-content-container {

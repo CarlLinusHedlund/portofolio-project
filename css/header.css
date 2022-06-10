@@ -1,8 +1,4 @@
 header {
-    scroll-behavior: smooth;
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 75px;
     z-index: 100;
     width: 100%;

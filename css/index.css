@@ -2,7 +2,6 @@
     height: 100vh;
     width: 100%;
     position: relative;
-    margin-top: 75px;
     min-height: 450px;
 
 }
@@ -201,10 +200,6 @@
     width: 60%;
 }
 
-.section-one {
-    width: 100%;
-}
-
 .section-one-imgs {
     width: 100%;
 }
@@ -263,12 +258,12 @@
     align-items: center;
 }
 
-.scroll-container {
+main {
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    scroll-margin-top: 80px;
     height: 100vh;
     scroll-behavior: smooth;
 }
@@ -278,13 +273,12 @@
 }
 
 .section-one, .landingpage, .recent-project-container, .contact-form{
-    scroll-margin-top: 75px;
     height: 100vh;
-    scroll-snap-align: start;
+    
 }
 
 .section-two, .section-three, .section-four, .section-five {
-    height: 90vh;
+    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -292,38 +286,8 @@
     align-items: center;
     scroll-snap-align: start;
     scroll-margin-top: 80px;
+    scroll-padding-top: 100px;
 }
-
-/* .section-four {
-    padding-bottom: 50px;
-} */
-
-/* .section-two {
-    scroll-margin-top: 400px;
-} */
-
-/* .section-five {
-    height: 95vh;
-    scroll-margin-bottom: 400px;
-    margin-bottom: 0;
-} */
-
-.project-slider {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-snap-align: start;
-    position: relative;
-    height: 100vh;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-}
-
-.project-slider::-webkit-scrollbar{
-    display: none; /* for Chrome, Safari, and Opera */
-}
-
 
 .slider-guide {
     position: sticky;
@@ -354,7 +318,6 @@
     opacity: 1;
 }
 
-
 .bar {
     z-index: 2;
     width: 55px;
@@ -378,7 +341,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
+    scroll-snap-align: center;
 }
 
 .section-img {
@@ -449,10 +413,6 @@
     max-width: 350px;
 }
 
-
-
-
-
 @media screen and (max-width: 410px) {
     .inner-container {
         height: 100%;
@@ -462,9 +422,6 @@
         width: 100%;
         height: 40%;
     }
-
-    
-
 }
 
 @media screen and (min-width: 500px){
@@ -492,7 +449,6 @@
     .section-info p {
         max-width: none;
     }
-
 }
 
 @media screen and (min-width: 590px) {
@@ -531,7 +487,7 @@
     .about-wrapper {
         flex-direction: row-reverse;
         gap: 40px;
-        width: 100%;
+        width: 95%;
     }
 
     .about-content-container {

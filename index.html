@@ -344,7 +344,7 @@
                         I'll try my best to get back to you!
                     </p>
                 </div>
-                <form action="" method="" id="contact-form" class="form-container" novalidate>
+                <form action="./php/contact-form-handler.php" method="post" id="contact-form" class="form-container" novalidate>
                     <div class="row100">
                         <div class="col">
                             <div class="inputBox">
@@ -368,7 +368,7 @@
                     <div class="row100">
                         <div class="col">
                             <div class="inputBox">
-                                <input type="text" name="" id="subject" required="required">
+                                <input type="text" name="subject" id="subject" required="required">
                                 <span class="text">Subject</span>
                                 <span class="line"></span>
                                 <small></small>
@@ -378,14 +378,14 @@
                     <div class="row100">
                         <div class="col">
                             <div class="inputBox textarea message-container">
-                                <textarea id="message" required="required"></textarea>
+                                <textarea name="message" id="message" required="required"></textarea>
                                 <span class="text message-span">Type Your Message...</span>
                                 <span class="line"></span>
                                 <small></small>
                             </div>
                         </div>
                     </div>
-                    <button type="submit">Send Message</button>
+                    <button class="submit" type="submit">Send Message</button>
                 </form>
             </div>
             <div class="google-map-container">

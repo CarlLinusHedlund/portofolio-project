@@ -7,7 +7,7 @@ const navBars = document.querySelectorAll(".bar")
 
 //Helper Function
 const actionSectionHandler = (currentSectionID) => {
-    // console.log(currentSectionID)
+    console.log(currentSectionID)
     navLinks.forEach(link =>{
         // console.log(link);
         if (link.dataset.section === currentSectionID){

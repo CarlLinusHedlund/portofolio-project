@@ -1,4 +1,5 @@
 header {
+    scroll-behavior: smooth;
     position: absolute;
     top: 0;
     left: 0;
@@ -106,7 +107,7 @@ header {
     overflow: hidden;
     position: absolute;
     top: 75px;
-    left: 0;
+    left: -3px;
     width: 100%;
     height: 0;
     display: flex;
@@ -206,8 +207,8 @@ header {
     }
     
     .media-container a {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
     }
     
     .media-container svg{

@@ -388,6 +388,14 @@
     z-index: 1;
 }
 
+.test-img {
+    background-image: url(../img/iphones/iPhone-13-Pro-snowy-days-og.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
 .section-img img{
     z-index: 1;
     position: absolute;

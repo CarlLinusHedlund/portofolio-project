@@ -284,14 +284,14 @@
 }
 
 .section-two, .section-three, .section-four, .section-five {
-    height: 100vh;
+    height: 90vh;
     text-align: center;
     display: flex;
     justify-content: center;
     gap: 20px;
     align-items: center;
     scroll-snap-align: start;
-    scroll-margin-top: 109px;
+    scroll-margin-top: 80px;
 }
 
 /* .section-four {
@@ -666,6 +666,7 @@
         align-items: center;
         justify-content: flex-end;        
         flex-direction: row;
+        height: 80vh;
         width: 100%;
         scroll-snap-align: center;
     }    

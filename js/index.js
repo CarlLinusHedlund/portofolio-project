@@ -6,6 +6,17 @@ const navBars = document.querySelectorAll(".bar")
 const sliderGuider = document.querySelector(".disappear")
 const projectSection = document.querySelectorAll(".project-section")
 
+
+//Preloader
+window.addEventListener("load", function(){
+    const loader = this.document.querySelector("#preloader")
+    this.setTimeout(function(){
+        loader.classList.add("hide")
+    }, 2000)
+    
+})
+
+
 //Helper Function
 const actionSectionHandler = (currentSectionID) => {
     // console.log(currentSectionID)
@@ -54,7 +65,7 @@ sections.forEach(section => {
 
 //Intersection Observer for fade-in of  slide nav and about me text
 const appearOptions = {
-    threshold: .3,
+    threshold: .4,
 };
 
 const appearOnScroll = new IntersectionObserver (function(entries, appearOnScroll) {

@@ -12,6 +12,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     font-family: 'K2D', sans-serif;
@@ -28,7 +32,7 @@ body {
 }
 
 .inner {
-    max-width: 1024px;
+    max-width: 1224px;
     margin: 0 auto;
     padding: 0px 10px;
     position: relative;
